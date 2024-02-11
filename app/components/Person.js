@@ -22,7 +22,7 @@ export default function Person({ name, role, image, location }) {
         zIndex: 0,
       }}
       onMouseOver={(e) => {
-        e.currentTarget.style.transform = `rotate(${0}deg) scale(1.75)`;
+        e.currentTarget.style.transform = `rotate(${0}deg) scale(1.5)`;
         e.currentTarget.style.zIndex = 1;
       }}
       onMouseOut={(e) => {
@@ -38,10 +38,12 @@ export default function Person({ name, role, image, location }) {
         className="rounded-md w-full aspect-square shadow-sm"
       />
       <div className="flex flex-col -space-y-2">
-        <h1 className={`${crimson.className}  font-bold text-lg italic`}>
+        <h1 className={`${crimson.className}  font-semibold text-lg italic`}>
           {name}
         </h1>
-        <p className={`${crimson.className} font-bold text-slate-500 italic`}>
+        <p
+          className={`${crimson.className} font-semibold text-slate-500 italic`}
+        >
           {role}
         </p>
       </div>
