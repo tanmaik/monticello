@@ -28,7 +28,7 @@ export default function Home() {
               name={person.name.split(" ")[0]}
               role={person.role}
               image={person.image}
-              listeningTo={person.listeningTo}
+              location={person.location}
             />
           ))}
 

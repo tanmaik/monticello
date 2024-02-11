@@ -10,12 +10,12 @@ const crimson = Crimson_Text({
   weight: ["400", "600", "700"],
 });
 
-export default function Person({ name, role, image, listeningTo }) {
+export default function Person({ name, role, image, location }) {
   const rotation = Math.random() * 20 - 10;
 
   return (
     <div
-      className={`relative hover:h-52 group w-32 border-2 bg-white cursor-help px-2 py-2 rounded-md shadow-md hover:shadow-lg`}
+      className={`relative group w-32 border-2 bg-white cursor-help px-2 py-2 rounded-md shadow-md hover:shadow-lg`}
       style={{
         transform: `rotate(${rotation}deg) scale(1)`,
         transition: "transform 0.3s ease",
@@ -45,36 +45,11 @@ export default function Person({ name, role, image, listeningTo }) {
           {role}
         </p>
       </div>
-      {/* <p
-        className={`${crimson.className} font-medium italic hidden group-hover:inline`}
+      <p
+        className={`${crimson.className} font-bold text-xs italic hidden group-hover:inline`}
       >
-        Listening to:
+        {location}
       </p>
-      <div className=" items-center gap-1 hidden group-hover:flex">
-        <Image
-          src={listeningTo.image}
-          alt="Person"
-          height={1000}
-          width={1000}
-          className="rounded-full w-4 h-4"
-        />
-        <p className="text-xs font-medium">{listeningTo.title}</p>
-      </div> */}
-      <div className="absolute bottom-0 left-0 right-0 p-2 hidden group-hover:block">
-        <p className={`${crimson.className} font-medium italic`}>
-          Listening to:
-        </p>
-        <div className="flex items-center gap-1">
-          <Image
-            src={listeningTo.image}
-            alt="Person"
-            height={1000}
-            width={1000}
-            className="rounded-full w-4 h-4"
-          />
-          <p className="text-xs font-medium">{listeningTo.title}</p>
-        </div>
-      </div>
     </div>
   );
 }
