@@ -62,7 +62,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className={`mt-24 italic ${crimson.className}`}>
+        <div className={`mt-24 mb-8 italic ${crimson.className}`}>
           <p className="text-center">
             Copyright ©2024 Kalisipudi Inc. All rights reserved.
           </p>
