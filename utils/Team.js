@@ -8,8 +8,7 @@ const Team = [
   },
   {
     name: "Johanna Lohmus",
-    image:
-      "https://media.licdn.com/dms/image/D5603AQF0HLrJGBzhWw/profile-displayphoto-shrink_400_400/0/1699922449270?e=1713398400&v=beta&t=UKSpYyXyVJFib0xRCuqhsvuphIoMRI2ha_3XRwNiNeo",
+    image: "/johanna.png",
     role: "Design",
     location: "Mclean, VA",
   },
@@ -22,15 +21,13 @@ const Team = [
   },
   {
     name: "Hitesh Davuluri",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQHxk-J18hlaCg/profile-displayphoto-shrink_400_400/0/1703048641274?e=1713398400&v=beta&t=JD9yypkoK79Mt6lCIxrj9CMSC36-pK-eqCcIv7u7H4k",
+    image: "/hitesh.png",
     role: "Outreach",
-    location: "Philadelphia, PA",
+    location: "Chester Springs, PA",
   },
   {
     name: "Pravan Balamurugan",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQHWeSRaHXjCBg/profile-displayphoto-shrink_400_400/0/1700774633030?e=1713398400&v=beta&t=DU9Uy-xlGngGSh7Q8BmPbWc_ruIkO75LCMtKyuCpIGM",
+    image: "/pravan.png",
     role: "Logistics",
     location: "Edison, NJ",
   },
